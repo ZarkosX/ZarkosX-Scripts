@@ -5,7 +5,7 @@ services:
     environment:
       VERSION: "11l"
       USERNAME: "Venom"
-      PASSWORD: "thevenom123@"
+      PASSWORD: "thevenom123"
       RAM_SIZE: "14G"
       CPU_CORES: "4"
       DISK_SIZE: "20G"
