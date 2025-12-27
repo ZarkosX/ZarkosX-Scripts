@@ -8,7 +8,8 @@ services:
       PASSWORD: "Nexus@123"
       RAM_SIZE: "16G"
       CPU_CORES: "4"
-      DISK_SIZE: "256G"
+      DISK_SIZE: "32G"
+      DISK2_SIZE: "128G"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -18,4 +19,7 @@ services:
       - 8006:8006
       - 3389:3389/tcp
       - 3389:3389/udp
+    volumes:
+      - ./disk1:/storage
+      - ./disk2:/storage2
     stop_grace_period: 2m
