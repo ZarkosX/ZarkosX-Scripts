@@ -6,9 +6,9 @@ services:
       VERSION: "11l"
       USERNAME: "Welder"
       PASSWORD: "Nexus@123"
-      RAM_SIZE: "14G"
+      RAM_SIZE: "16G"
       CPU_CORES: "4"
-      DISK_SIZE: "20G"
+      DISK_SIZE: "32G"
     devices:
       - /dev/kvm
       - /dev/net/tun
