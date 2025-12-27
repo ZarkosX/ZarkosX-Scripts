@@ -4,7 +4,6 @@ services:
     container_name: windows
     environment:
       VERSION: "10"
-      LANGUAGE: "English"
       USERNAME: "Welder"
       PASSWORD: "Nexus@123"
       RAM_SIZE: "12G"
