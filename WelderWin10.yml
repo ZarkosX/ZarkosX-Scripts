@@ -7,7 +7,7 @@ services:
       LANGUAGE: "English"
       USERNAME: "Welder"
       PASSWORD: "Nexus@123"
-      RAM_SIZE: "16G"
+      RAM_SIZE: "12G"
       CPU_CORES: "4"
       DISK_SIZE: "32G"
     devices:
