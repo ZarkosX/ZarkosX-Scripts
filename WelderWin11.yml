@@ -8,8 +8,8 @@ services:
       PASSWORD: "Nexus@123"
       RAM_SIZE: "16G"
       CPU_CORES: "4"
-      DISK_SIZE: "32G"
-      DISK2_SIZE: "128G"
+      DISK_SIZE: "16G"
+      DISK2_SIZE: "64G"
     devices:
       - /dev/kvm
       - /dev/net/tun
