@@ -10,8 +10,10 @@ services:
       RAM_SIZE: "16G"
       CPU_CORES: "4"
       DISK_SIZE: "64G"
+      DISK2_SIZE: "32G"
     volumes:
       - ./windows:/storage
+      - ./windows2:/storage2
     devices:
       - /dev/kvm
       - /dev/net/tun
