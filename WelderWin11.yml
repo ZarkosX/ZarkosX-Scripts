@@ -7,11 +7,11 @@ services:
       VERSION: "11l"
       USERNAME: "Welder"
       PASSWORD: "Nexus@123"
-      RAM_SIZE: "14G"
+      RAM_SIZE: "16G"
       CPU_CORES: "4"
-      DISK_SIZE: "52G"
+      DISK_SIZE: "64G"
     volumes:
-      - ./windows-data:/storage
+      - ./windows:/storage
     devices:
       - /dev/kvm
       - /dev/net/tun
