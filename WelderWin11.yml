@@ -3,6 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     privileged: true
+    restart: unless-stopped
     environment:
       VERSION: "11"
       USERNAME: "Welder"
@@ -10,7 +11,7 @@ services:
       RAM_SIZE: "16G"
       CPU_CORES: "4"
       DISK_SIZE: "32G"
-      DISK2_SIZE: "32G"
+      DISK2_SIZE: "64G"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -22,4 +23,7 @@ services:
       - "8006:8006"
       - "3389:3389/tcp"
       - "3389:3389/udp"
+    volumes:
+      - ./win-system:/storage
+      - ./win-data:/storage2
     stop_grace_period: 2m
