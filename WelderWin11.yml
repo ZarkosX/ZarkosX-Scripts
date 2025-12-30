@@ -4,6 +4,7 @@ services:
     container_name: windows
     privileged: true
     restart: unless-stopped
+    shm_size: "2g"
     environment:
       VERSION: "11"
       USERNAME: "Welder"
@@ -11,7 +12,7 @@ services:
       RAM_SIZE: "16G"
       CPU_CORES: "4"
       DISK_SIZE: "32G"
-      DISK2_SIZE: "64G"
+      DISK2_SIZE: "32G"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -19,6 +20,10 @@ services:
       - NET_ADMIN
     sysctls:
       net.ipv4.ip_forward: 1
+    ulimits:
+      nofile:
+        soft: 1048576
+        hard: 1048576
     ports:
       - "8006:8006"
       - "3389:3389/tcp"
