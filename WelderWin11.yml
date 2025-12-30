@@ -4,7 +4,7 @@ services:
     container_name: windows
     privileged: true
     environment:
-      VERSION: "11l"
+      VERSION: "11"
       USERNAME: "Welder"
       PASSWORD: "Nexus@123"
       RAM_SIZE: "16G"
