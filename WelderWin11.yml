@@ -4,15 +4,14 @@ services:
     container_name: windows
     privileged: true
     restart: unless-stopped
-    shm_size: "2g"
     environment:
       VERSION: "11"
       USERNAME: "Welder"
       PASSWORD: "Nexus@123"
       RAM_SIZE: "16G"
       CPU_CORES: "4"
-      DISK_SIZE: "32G"
-      DISK2_SIZE: "32G"
+      DISK_SIZE: "20G"
+      DISK2_SIZE: "64G"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -20,15 +19,11 @@ services:
       - NET_ADMIN
     sysctls:
       net.ipv4.ip_forward: 1
-    ulimits:
-      nofile:
-        soft: 1048576
-        hard: 1048576
     ports:
       - "8006:8006"
       - "3389:3389/tcp"
       - "3389:3389/udp"
     volumes:
-      - ./win-system:/storage
-      - ./win-data:/storage2
+      - ./windows:/storage
+      - ./windows2:/storage2
     stop_grace_period: 2m
