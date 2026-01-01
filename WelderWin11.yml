@@ -8,7 +8,7 @@ services:
       VERSION: "11"
       USERNAME: "Welder"
       PASSWORD: "Nexus@123"
-      RAM_SIZE: "16G"
+      RAM_SIZE: "12G"
       CPU_CORES: "4"
       DISK_SIZE: "20G"
       DISK2_SIZE: "64G"
@@ -24,6 +24,6 @@ services:
       - "3389:3389/tcp"
       - "3389:3389/udp"
     volumes:
-      - ./windows:/storage
-      - ./windows2:/storage2
+      - ./win-system:/storage
+      - ./win-data:/storage2
     stop_grace_period: 2m
