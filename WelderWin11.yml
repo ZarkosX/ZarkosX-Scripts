@@ -8,10 +8,10 @@ services:
       VERSION: "11"
       USERNAME: "Welder"
       PASSWORD: "Nexus@123"
-      RAM_SIZE: "12G"
+      RAM_SIZE: "10G"
       CPU_CORES: "4"
-      DISK_SIZE: "20G"
-      DISK2_SIZE: "64G"
+      DISK_SIZE: "32G"
+      DISK2_SIZE: "32G"
     devices:
       - /dev/kvm
       - /dev/net/tun
