@@ -8,7 +8,7 @@ services:
       VERSION: "11"
       USERNAME: "Welder"
       PASSWORD: "Nexus@123"
-      RAM_SIZE: "10G"
+      RAM_SIZE: "13G"
       CPU_CORES: "4"
       DISK_SIZE: "48G"
     volumes:
