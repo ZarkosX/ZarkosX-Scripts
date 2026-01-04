@@ -54,13 +54,13 @@ pwd
 4. Download configuration file:
 
 ```bash
-wget -O WelderWin10.yml https://raw.githubusercontent.com/ZarkosX/ZarkosX-Scripts/refs/heads/main/WelderWin10.yml
+wget -O RDPWin10.yml https://raw.githubusercontent.com/ZarkosX/ZarkosX-Scripts/refs/heads/main/RDPWin10.yml
 ```
 
 5. (Optional) Review the file:
 
 ```bash
-cat WelderWin10.yml
+cat RDPWin10.yml
 ```
 
 ---
@@ -68,13 +68,13 @@ cat WelderWin10.yml
 ### **Start Windows 10**
 
 ```bash
-sudo docker-compose -f WelderWin10.yml up
+sudo docker-compose -f RDPWin10.yml up
 ```
 
 Run in background (detached mode):
 
 ```bash
-sudo docker-compose -f WelderWin10.yml up -d
+sudo docker-compose -f RDPWin10.yml up -d
 ```
 
 ---
