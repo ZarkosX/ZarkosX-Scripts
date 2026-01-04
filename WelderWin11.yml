@@ -10,8 +10,6 @@ services:
       RAM_SIZE: "13G"
       CPU_CORES: "4"
       DISK_SIZE: "48G"
-    volumes:
-      - ./win-system:/storage
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -23,5 +21,7 @@ services:
       - "8006:8006"
       - "3389:3389/tcp"
       - "3389:3389/udp"
+    volumes:
+      - ./win-system:/storage
     restart: always
     stop_grace_period: 2m
