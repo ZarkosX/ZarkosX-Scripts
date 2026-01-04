@@ -1,9 +1,9 @@
-# WelderRDPWin10
+# RDPWin10
 
-## **Welder RDP – Windows 10 (Docker)**
+## **RDP – Windows 10 (Docker)**
 
 **Developer:** ZarkosX
-**Project:** Welder RDP – Windows 10
+**Project:** RDP – Windows 10
 
 This guide explains how to deploy **Windows 10 RDP** using **Docker & Docker Compose** on a Linux VPS.
 
@@ -14,8 +14,8 @@ This guide explains how to deploy **Windows 10 RDP** using **Docker & Docker Com
 * Minimum:
 
   * **4 vCPU**
-  * **16 GB RAM**
-  * **64 GB Disk**
+  * **12 GB RAM**
+  * **32 GB Disk**
 * Root or sudo access
 
 ---
@@ -50,20 +50,14 @@ docker
 pwd
 ```
 
-4. Create project directory:
 
-```bash
-mkdir WelderWin10
-cd WelderWin10
-```
-
-5. Download configuration file:
+4. Download configuration file:
 
 ```bash
 wget -O WelderWin10.yml https://raw.githubusercontent.com/ZarkosX/ZarkosX-Scripts/refs/heads/main/WelderWin10.yml
 ```
 
-6. (Optional) Review the file:
+5. (Optional) Review the file:
 
 ```bash
 cat WelderWin10.yml
