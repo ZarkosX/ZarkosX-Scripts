@@ -1,63 +1,64 @@
-# RDPWin10
-
-## **RDP – Windows 10 (Docker)**
+# RDP – Windows 10 Pro (Docker)
 
 **Developer:** ZarkosX
-**Project:** RDP – Windows 10
+**Project:** RDP – Windows 10 Pro
 
-This guide explains how to deploy **Windows 10 RDP** using **Docker & Docker Compose** on a Linux VPS.
-
----
-
-### **System Requirements**
-
-* Minimum:
-
-  * **4 vCPU**
-  * **12 GB RAM**
-  * **32 GB Disk**
-* Root or sudo access
+This guide explains how to deploy **Windows 10 Pro with RDP access** using **Docker** and **Docker Compose** on a Linux VPS.
 
 ---
 
-### **Setup Instructions**
+## 📌 System Requirements
 
-Run the following commands **in order**:
+### Minimum Requirements
 
-1. Switch to root:
+* **CPU:** 4 vCPU
+* **RAM:** 12 GB
+* **Storage:** 32 GB SSD
+* **OS:** Ubuntu 20.04 / 22.04 (or any modern Linux distro)
+* **Access:** Root or sudo privileges
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow the steps below **in order**.
+
+### 1️⃣ Switch to root user
 
 ```bash
 sudo su
 ```
 
-2. Update the system:
+### 2️⃣ Update system packages
 
 ```bash
 sudo apt update
 ```
 
-3. Install Docker and Docker Compose:
+### 3️⃣ Install Docker & Docker Compose
 
 ```bash
 sudo apt install docker.io docker-compose -y
 ```
 
-```bash
-docker
-```
+Verify installation:
 
 ```bash
-pwd
+docker --version
+docker-compose --version
 ```
 
+---
 
-4. Download configuration file:
+## 📥 Download Configuration File
+
+Download the Windows 10 Pro Docker Compose configuration:
 
 ```bash
 wget -O RDPWin10.yml https://raw.githubusercontent.com/ZarkosX/ZarkosX-Scripts/refs/heads/main/RDPWin10.yml
 ```
 
-5. (Optional) Review the file:
+(Optional) Review the file:
 
 ```bash
 cat RDPWin10.yml
@@ -65,29 +66,75 @@ cat RDPWin10.yml
 
 ---
 
-### **Start Windows 10**
+## ▶️ Start Windows 10 Pro Container
+
+### Run normally
 
 ```bash
 sudo docker-compose -f RDPWin10.yml up
 ```
 
-Run in background (detached mode):
+### Run in background (recommended)
 
 ```bash
 sudo docker-compose -f RDPWin10.yml up -d
 ```
 
+Windows 10 Pro will start automatically.
+
 ---
 
-### **RDP Access**
+## 🖥️ RDP Access Information
 
 * **RDP Port:** `8006`
-* Use any RDP client to connect
-* Windows 10 will start automatically
+* **Protocol:** Remote Desktop (RDP)
+* **Client:** Any RDP client (Windows Remote Desktop, Remmina, Microsoft RDP, etc.)
+
+### Example Connection
+
+```
+IP: Your_VPS_IP
+Port: 8006
+```
 
 ---
 
-### **Credits**
+## 🔄 Container Management
+
+### Stop container
+
+```bash
+sudo docker-compose -f RDPWin10.yml down
+```
+
+### Restart container
+
+```bash
+sudo docker-compose -f RDPWin10.yml restart
+```
+
+### View logs
+
+```bash
+sudo docker logs windows
+```
+
+---
+
+## ⚠️ Notes
+
+* First boot may take **5–10 minutes**.
+* Ensure port **8006** is open in your firewall.
+* Performance depends on VPS resources.
+
+---
+
+## 👨‍💻 Credits
 
 **Developed by:** ZarkosX
-**All rights reserved**
+**Project:** ZarkosX Scripts
+**All rights reserved ©**
+
+---
+
+✅ You have successfully deployed **Windows 10 Pro RDP using Docker**
