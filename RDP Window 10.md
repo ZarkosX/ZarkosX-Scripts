@@ -7,9 +7,9 @@ This guide explains how to deploy **Windows 10 Pro with RDP access** using **Doc
 
 ---
 
-## 📌 System Requirements
+## 1. System Requirements
 
-### Minimum Requirements
+### 1.1 Minimum Requirements
 
 * **CPU:** 4 vCPU
 * **RAM:** 12 GB
@@ -19,23 +19,23 @@ This guide explains how to deploy **Windows 10 Pro with RDP access** using **Doc
 
 ---
 
-## ⚙️ Installation & Setup
+## 2. Installation & Setup
 
 Follow the steps below **in order**.
 
-### 1️⃣ Switch to root user
+### 1️⃣ 2.1 Switch to root user
 
 ```bash
 sudo su
 ```
 
-### 2️⃣ Update system packages
+### 2️⃣ 2.2 Update system packages
 
 ```bash
 sudo apt update
 ```
 
-### 3️⃣ Install Docker & Docker Compose
+### 3️⃣ 2.3 Install Docker & Docker Compose
 
 ```bash
 sudo apt install docker.io docker-compose -y
@@ -50,7 +50,7 @@ docker-compose --version
 
 ---
 
-## 📥 Download Configuration File
+## 3. Download Configuration File
 
 Download the Windows 10 Pro Docker Compose configuration:
 
@@ -66,7 +66,7 @@ cat RDPWin10.yml
 
 ---
 
-## ▶️ Start Windows 10 Pro Container
+## 4. Start Windows 10 Pro Container
 
 ### Run normally
 
@@ -84,7 +84,7 @@ Windows 10 Pro will start automatically.
 
 ---
 
-## 🖥️ RDP Access Information
+## 5. RDP Access Information
 
 * **RDP Port:** `8006`
 * **Protocol:** Remote Desktop (RDP)
@@ -99,7 +99,7 @@ Port: 8006
 
 ---
 
-## 🔄 Container Management
+## 6. Container Management
 
 ### Stop container
 
@@ -121,7 +121,7 @@ sudo docker logs windows
 
 ---
 
-## ⚠️ Notes
+## 7. Notes
 
 * First boot may take **5–10 minutes**.
 * Ensure port **8006** is open in your firewall.
@@ -129,7 +129,7 @@ sudo docker logs windows
 
 ---
 
-## 👨‍💻 Credits
+## 8. Credits
 
 **Developed by:** ZarkosX
 **Project:** ZarkosX Scripts
@@ -137,4 +137,4 @@ sudo docker logs windows
 
 ---
 
-✅ You have successfully deployed **Windows 10 Pro RDP using Docker**
+You have successfully deployed Windows 10 Pro RDP using Docker
