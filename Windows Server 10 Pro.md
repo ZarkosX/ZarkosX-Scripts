@@ -1,9 +1,9 @@
-# RDP – Windows 10 Pro (Docker)
+# RDP – Windows Server 2022 (Docker)
 
 **Developer:** ZarkosX
-**Project:** RDP – Windows 10 Pro
+**Project:** RDP – Windows Server 2022
 
-This guide explains how to deploy **Windows 10 Pro with RDP access** using **Docker** and **Docker Compose** on a Linux VPS.
+This guide explains how to deploy **Windows Server 2022 with RDP access** using **Docker** and **Docker Compose** on a Linux VPS.
 
 ---
 
@@ -45,7 +45,7 @@ sudo apt install docker.io docker-compose -y
 
 ## 4. Download Configuration File
 
-Download the Windows 10 Pro Docker Compose configuration:
+Download the **Windows Server 2022** Docker Compose configuration:
 
 ```bash
 wget -O WindowsServer.yml https://raw.githubusercontent.com/ZarkosX/ZarkosX-Scripts/refs/heads/main/WindowsServer.yml
@@ -59,7 +59,7 @@ cat WindowsServer.yml
 
 ---
 
-## 5. Start Windows 10 Pro Container
+## 5. Start Windows Server 2022 Container
 
 ### Run normally
 
@@ -73,7 +73,7 @@ sudo docker-compose -f WindowsServer.yml up
 sudo docker-compose -f WindowsServer.yml up -d
 ```
 
-Windows 10 Pro will start automatically.
+**Windows Server 2022** will start automatically.
 
 ---
 
@@ -119,6 +119,7 @@ sudo docker logs windows
 * First boot may take **5–10 minutes**.
 * Ensure port **8006** is open in your firewall.
 * Performance depends on VPS resources.
+* Windows Server 2022 is optimized for **server workloads, RDP usage, and long uptime**.
 
 ---
 
@@ -130,4 +131,4 @@ sudo docker logs windows
 
 ---
 
-You have successfully deployed Windows 10 Pro RDP using Docker
+✅ **You have successfully deployed Windows Server 2022 RDP using Docker**
