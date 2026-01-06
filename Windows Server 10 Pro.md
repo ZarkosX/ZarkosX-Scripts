@@ -12,8 +12,9 @@ This guide explains how to deploy **Windows Server 2022 with RDP access** using 
 ### Minimum Requirements
 
 * **CPU:** 4 vCPU
-* **RAM:** 12 GB
+* **RAM:** 13 GB
 * **Storage:** 32 GB SSD
+* **Storage2:** 128 GB SSD
 * **OS:** Ubuntu 20.04 / 22.04 (or any modern Linux distro)
 * **Access:** Root or sudo privileges
 
