@@ -48,13 +48,13 @@ sudo apt install docker.io docker-compose -y
 Download the Windows 10 Pro Docker Compose configuration:
 
 ```bash
-wget -O RDPWin10.yml https://raw.githubusercontent.com/ZarkosX/ZarkosX-Scripts/refs/heads/main/RDPWin10.yml
+wget -O WindowsServer.yml https://raw.githubusercontent.com/ZarkosX/ZarkosX-Scripts/refs/heads/main/WindowsServer.yml
 ```
 
 (Optional) Review the file:
 
 ```bash
-cat RDPWin10.yml
+cat WindowsServer.yml
 ```
 
 ---
@@ -64,13 +64,13 @@ cat RDPWin10.yml
 ### Run normally
 
 ```bash
-sudo docker-compose -f RDPWin10.yml up
+sudo docker-compose -f WindowsServer.yml up
 ```
 
 ### Run in background (recommended)
 
 ```bash
-sudo docker-compose -f RDPWin10.yml up -d
+sudo docker-compose -f WindowsServer.yml up -d
 ```
 
 Windows 10 Pro will start automatically.
@@ -97,13 +97,13 @@ Port: 8006
 ### Stop container
 
 ```bash
-sudo docker-compose -f RDPWin10.yml down
+sudo docker-compose -f WindowsServer.yml down
 ```
 
 ### Restart container
 
 ```bash
-sudo docker-compose -f RDPWin10.yml restart
+sudo docker-compose -f WindowsServer.yml restart
 ```
 
 ### View logs
