@@ -1003,8 +1003,8 @@ elif [[ "$choice" == "4" ]]; then
     echo -e "${CYAN}========================================================${RESET}"
 
     curl -fsSL https://get.telebit.io | bash
-    echo -e "${GREEN}âœ… Telebit installed!${RESET}"
-    echo -e "${CYAN}â–¶ Run it using: telebit help${RESET}"
+    echo -e "${GREEN}[OK] Telebit installed!${RESET}"
+    echo -e "${CYAN}-> Run it using: telebit help${RESET}"
 
 elif [[ "$choice" == "5" ]]; then
     clear
@@ -1022,14 +1022,14 @@ elif [[ "$choice" == "5" ]]; then
     # Install cloudflared
     sudo apt update && sudo apt install -y cloudflared
 
-    echo -e "${GREEN} Cloudflare Tunnel installed successfully!${RESET}"
-    echo -e "${CYAN} Login using: cloudflared tunnel login${RESET}"
-    echo -e "${CYAN} Create tunnel: cloudflared tunnel create NAME${RESET}"
+    echo -e "${GREEN}[OK] Cloudflare Tunnel installed successfully!${RESET}"
+    echo -e "${CYAN}[OK] Login using: cloudflared tunnel login${RESET}"
+    echo -e "${CYAN}[OK] Create tunnel: cloudflared tunnel create NAME${RESET}"
 
 elif [[ "$choice" == "0" ]]; then
-    echo -e "${RED}Exiting...${RESET}"
+    echo -e "${RED}❌Exiting...${RESET}"
     exit 0
 
 else
-    echo -e "${RED}Invalid choice!${RESET}"
+    echo -e "${RED}❌Invalid choice!${RESET}"
 fi
