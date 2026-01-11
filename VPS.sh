@@ -27,7 +27,7 @@ echo
 echo -e "${CYAN}1${RESET} - ${GREEN}Make VPS in Firebase${RESET}"
 echo -e "${CYAN}2${RESET} - ${MAGENTA}Install Proxmox VE (Docker)${RESET}"
 echo -e "${CYAN}3${RESET} - ${BLUE}Make xRDP (XFCE + Firefox)${RESET}"
-echo -e "${CYAN}4${RESET} - ${YELLOW}Install Telebit${RESET}"
+echo -e "${CYAN}4${RESET} - ${BLACK}Install Telebit${RESET}"
 echo -e "${CYAN}5${RESET} - ${YELLOW}Install Cloudflare Tunnels${RESET}"
 echo -e "${RED}0${RESET} - ${RED}Exit${RESET}"
 echo
@@ -993,7 +993,7 @@ elif [[ "$choice" == "3" ]]; then
     systemctl enable xrdp
     systemctl start xrdp
 
-    echo -e "${GREEN}✓ xRDP + XFCE + Firefox installed!${RESET}"
+    echo -e "${GREEN} xRDP + XFCE + Firefox installed!${RESET}"
     echo -e "${CYAN}-> Connect via RDP client to your server IP${RESET}"
 
 elif [[ "$choice" == "4" ]]; then
@@ -1022,9 +1022,9 @@ elif [[ "$choice" == "5" ]]; then
     # Install cloudflared
     sudo apt update && sudo apt install -y cloudflared
 
-    echo -e "${GREEN}✅ Cloudflare Tunnel installed successfully!${RESET}"
-    echo -e "${CYAN}▶ Login using: cloudflared tunnel login${RESET}"
-    echo -e "${CYAN}▶ Create tunnel: cloudflared tunnel create NAME${RESET}"
+    echo -e "${GREEN} Cloudflare Tunnel installed successfully!${RESET}"
+    echo -e "${CYAN} Login using: cloudflared tunnel login${RESET}"
+    echo -e "${CYAN} Create tunnel: cloudflared tunnel create NAME${RESET}"
 
 elif [[ "$choice" == "0" ]]; then
     echo -e "${RED}Exiting...${RESET}"
