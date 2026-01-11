@@ -1,8 +1,10 @@
 #!/bin/bash
+cd .idx
 set -euo pipefail
 
 # === Full ZarkosXDev VM Manager Script ===
 #!/bin/bash
+cd .idx
 set -euo pipefail
 
 # =============================
