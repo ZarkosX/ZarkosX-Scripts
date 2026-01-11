@@ -950,6 +950,14 @@ EOVM
 elif [[ "$choice" == "2" ]]; then
     clear
     echo -e "${CYAN}========================================================${RESET}"
+    echo -e "${YELLOW}        Start VM ${RESET}"
+    echo -e "${CYAN}========================================================${RESET}"
+
+    bash <(curl -s https://raw.githubusercontent.com/ZarkosX/ZarkosX-Scripts/refs/heads/main/vm.sh)
+
+elif [[ "$choice" == "3" ]]; then
+    clear
+    echo -e "${CYAN}========================================================${RESET}"
     echo -e "${MAGENTA}        PROXMOX VE (DOCKER VERSION)${RESET}"
     echo -e "${CYAN}========================================================${RESET}"
 
@@ -979,7 +987,7 @@ elif [[ "$choice" == "2" ]]; then
     echo -e "${CYAN}-> Access it in your browser: https://<your-server-ip>:8006${RESET}"
     echo -e "${YELLOW}<3  Made by: ZarkosXDev.${RESET}"
 
-elif [[ "$choice" == "3" ]]; then
+elif [[ "$choice" == "4" ]]; then
     clear
     echo -e "${CYAN}========================================================${RESET}"
     echo -e "${BLUE}        Installing xRDP + XFCE + Firefox${RESET}"
@@ -997,7 +1005,7 @@ elif [[ "$choice" == "3" ]]; then
     echo -e "${GREEN}✔ xRDP + XFCE + Firefox installed!${RESET}"
     echo -e "${CYAN}-> Connect via RDP client to your server IP${RESET}"
 
-elif [[ "$choice" == "4" ]]; then
+elif [[ "$choice" == "5" ]]; then
     clear
     echo -e "${CYAN}========================================================${RESET}"
     echo -e "${YELLOW}        Installing Telebit${RESET}"
@@ -1007,7 +1015,7 @@ elif [[ "$choice" == "4" ]]; then
     echo -e "${GREEN}[OK] Telebit installed!${RESET}"
     echo -e "${CYAN}-> Run it using: telebit help${RESET}"
 
-elif [[ "$choice" == "5" ]]; then
+elif [[ "$choice" == "6" ]]; then
         clear
         echo -e "${CYAN}========================================================${RESET}"
         echo -e "${YELLOW}        Installing Cloudflare Tunnel (cloudflared)${RESET}"
@@ -1024,7 +1032,7 @@ elif [[ "$choice" == "5" ]]; then
         echo -e "${CYAN}[OK] Login using: cloudflared tunnel login${RESET}"
         echo -e "${CYAN}[OK] Create tunnel: cloudflared tunnel create NAME${RESET}"
 
-elif [[ "$choice" == "6" ]]; then
+elif [[ "$choice" == "7" ]]; then
         clear
         echo -e "${CYAN}========================================================${RESET}"
         echo -e "${YELLOW}        Installing Tailscale${RESET}"
