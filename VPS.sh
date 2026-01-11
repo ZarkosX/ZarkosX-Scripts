@@ -15,12 +15,12 @@ BOLD="\e[1m"
 
 cat << "EOF"
 
-███████╗ █████╗ ██████╗ ██╗  ██╗ ██████╗ ███████╗██╗  ██╗██████╗ ███████╗██╗   ██╗
-╚══███╔╝██╔══██╗██╔══██╗██║ ██╔╝██╔═══██╗██╔════╝╚██╗██╔╝██╔══██╗██╔════╝██║   ██║
-  ███╔╝ ███████║██████╔╝█████╔╝ ██║   ██║███████╗ ╚███╔╝ ██║  ██║█████╗  ██║   ██║
- ███╔╝  ██╔══██║██╔══██╗██╔═██╗ ██║   ██║╚════██║ ██╔██╗ ██║  ██║██╔══╝  ╚██╗ ██╔╝
-███████╗██║  ██║██║  ██║██║  ██╗╚██████╔╝███████║██╔╝ ██╗██████╔╝███████╗ ╚████╔╝ 
-╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝  ╚═══╝                                                                         
+â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•—  â–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—  â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—
+â•šâ•â•â–ˆâ–ˆâ–ˆâ•”â•â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘ â–ˆâ–ˆâ•”â•â–ˆâ–ˆâ•”â•â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â•â•â•â•â•šâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â•â•â•â•â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘
+  â–ˆâ–ˆâ–ˆâ•”â• â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â• â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â•šâ–ˆâ–ˆâ–ˆâ•”â• â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘
+ â–ˆâ–ˆâ–ˆâ•”â•  â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â–ˆâ–ˆâ•— â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â•šâ•â•â•â•â–ˆâ–ˆâ•‘ â–ˆâ–ˆâ•”â–ˆâ–ˆâ•— â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•  â•šâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•”â•
+â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•—â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â• â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•”â• 
+â•šâ•â•â•â•â•â•â•â•šâ•â•  â•šâ•â•â•šâ•â•  â•šâ•â•â•šâ•â•  â•šâ•â• â•šâ•â•â•â•â•â• â•šâ•â•â•â•â•â•â•â•šâ•â•  â•šâ•â•â•šâ•â•â•â•â•â• â•šâ•â•â•â•â•â•â•  â•šâ•â•â•â•                                                                         
 EOF
 
 echo
@@ -28,6 +28,7 @@ echo -e "${CYAN}1${RESET} - ${GREEN}Make VPS in Firebase${RESET}"
 echo -e "${CYAN}2${RESET} - ${MAGENTA}Install Proxmox VE (Docker)${RESET}"
 echo -e "${CYAN}3${RESET} - ${BLUE}Make xRDP (XFCE + Firefox)${RESET}"
 echo -e "${CYAN}4${RESET} - ${YELLOW}Install Telebit${RESET}"
+echo -e "${CYAN}5${RESET} - ${YELLOW}Install Cloudflare Tunnels${RESET}"
 echo -e "${RED}0${RESET} - ${RED}Exit${RESET}"
 echo
 
@@ -39,7 +40,7 @@ read -p "Enter your choice: " choice
 # =============================
 if [[ "$choice" == "1" ]]; then
     mkdir -p .idx
-    echo -e "${BLUE}📦 Creating .idx folder...${RESET}"
+    echo -e "${BLUE}ðŸ“¦ Creating .idx folder...${RESET}"
 
     # dev.nix
     cat > .idx/dev.nix <<'EODEV'
@@ -53,7 +54,7 @@ if [[ "$choice" == "1" ]]; then
   };
 }
 EODEV
-    echo -e "${GREEN}✅ dev.nix created${RESET}"
+    echo -e "${GREEN}âœ… dev.nix created${RESET}"
 
     # vm.sh
     cat > .idx/vm.sh <<'EOVM'
@@ -941,9 +942,9 @@ main_menu
 EOVM
 
     chmod +x .idx/vm.sh
-    echo "✅ vm.sh created in .idx"
-    echo -e "${GREEN}✅ VM Manager installed${RESET}"
-    echo -e "${YELLOW}▶ Run it using:${RESET} cd .idx && bash vm.sh"
+    echo "âœ… vm.sh created in .idx"
+    echo -e "${GREEN}âœ… VM Manager installed${RESET}"
+    echo -e "${YELLOW}â–¶ Run it using:${RESET} cd .idx && bash vm.sh"
 
 elif [[ "$choice" == "2" ]]; then
     clear
@@ -951,20 +952,20 @@ elif [[ "$choice" == "2" ]]; then
     echo -e "${MAGENTA}        PROXMOX VE (DOCKER VERSION)${RESET}"
     echo -e "${CYAN}========================================================${RESET}"
 
-    echo -e "${YELLOW}📦 Updating system...${RESET}"
+    echo -e "${YELLOW}ðŸ“¦ Updating system...${RESET}"
     apt update && apt upgrade -y
 
-    echo -e "${YELLOW}🐳 Installing Docker...${RESET}"
+    echo -e "${YELLOW}ðŸ³ Installing Docker...${RESET}"
     apt install -y docker.io
 
-    echo -e "${YELLOW}🔁 Enabling Docker auto-start...${RESET}"
+    echo -e "${YELLOW}ðŸ” Enabling Docker auto-start...${RESET}"
     systemctl enable docker
     systemctl start docker
 
-    echo -e "${YELLOW}📥 Pulling Proxmox Docker image...${RESET}"
+    echo -e "${YELLOW}ðŸ“¥ Pulling Proxmox Docker image...${RESET}"
     docker pull rtedpro/proxmox:9.0.11
 
-    echo -e "${GREEN}🚀 Starting Proxmox VE container...${RESET}"
+    echo -e "${GREEN}ðŸš€ Starting Proxmox VE container...${RESET}"
     docker run -itd \
         --name proxmoxve \
         --hostname pve \
@@ -973,8 +974,8 @@ elif [[ "$choice" == "2" ]]; then
         --restart unless-stopped \
         rtedpro/proxmox:9.0.11
 
-    echo -e "${GREEN}✅ Proxmox VE container started!${RESET}"
-    echo -e "${CYAN}▶ Access it in your browser: https://<your-server-ip>:8006${RESET}"
+    echo -e "${GREEN}âœ… Proxmox VE container started!${RESET}"
+    echo -e "${CYAN}â–¶ Access it in your browser: https://<your-server-ip>:8006${RESET}"
     echo -e "${YELLOW}<3  Made by: Kendrick.${RESET}"
 
 elif [[ "$choice" == "3" ]]; then
@@ -992,8 +993,8 @@ elif [[ "$choice" == "3" ]]; then
     systemctl enable xrdp
     systemctl start xrdp
 
-    echo -e "${GREEN}✅ xRDP + XFCE + Firefox installed!${RESET}"
-    echo -e "${CYAN}▶ Connect via RDP client to your server IP${RESET}"
+    echo -e "${GREEN}✓ xRDP + XFCE + Firefox installed!${RESET}"
+    echo -e "${CYAN}-> Connect via RDP client to your server IP${RESET}"
 
 elif [[ "$choice" == "4" ]]; then
     clear
@@ -1002,8 +1003,28 @@ elif [[ "$choice" == "4" ]]; then
     echo -e "${CYAN}========================================================${RESET}"
 
     curl -fsSL https://get.telebit.io | bash
-    echo -e "${GREEN}✅ Telebit installed!${RESET}"
-    echo -e "${CYAN}▶ Run it using: telebit help${RESET}"
+    echo -e "${GREEN}âœ… Telebit installed!${RESET}"
+    echo -e "${CYAN}â–¶ Run it using: telebit help${RESET}"
+
+elif [[ "$choice" == "5" ]]; then
+    clear
+    echo -e "${CYAN}========================================================${RESET}"
+    echo -e "${YELLOW}        Installing Cloudflare Tunnel (cloudflared)${RESET}"
+    echo -e "${CYAN}========================================================${RESET}"
+
+    # Add Cloudflare GPG key
+    sudo mkdir -p --mode=0755 /usr/share/keyrings
+    curl -fsSL https://pkg.cloudflare.com/cloudflare-public-v2.gpg | sudo tee /usr/share/keyrings/cloudflare-public-v2.gpg >/dev/null
+
+    # Add Cloudflare repository
+    echo 'deb [signed-by=/usr/share/keyrings/cloudflare-public-v2.gpg] https://pkg.cloudflare.com/cloudflared any main' | sudo tee /etc/apt/sources.list.d/cloudflared.list >/dev/null
+
+    # Install cloudflared
+    sudo apt update && sudo apt install -y cloudflared
+
+    echo -e "${GREEN}✅ Cloudflare Tunnel installed successfully!${RESET}"
+    echo -e "${CYAN}▶ Login using: cloudflared tunnel login${RESET}"
+    echo -e "${CYAN}▶ Create tunnel: cloudflared tunnel create NAME${RESET}"
 
 elif [[ "$choice" == "0" ]]; then
     echo -e "${RED}Exiting...${RESET}"
