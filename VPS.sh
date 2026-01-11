@@ -24,12 +24,13 @@ cat << "EOF"
 EOF
 
 echo
-echo -e "${CYAN}1${RESET} - ${GREEN}Make VPS in Firebase${RESET}"
-echo -e "${CYAN}2${RESET} - ${MAGENTA}Install Proxmox VE (Docker)${RESET}"
-echo -e "${CYAN}3${RESET} - ${BLUE}Make xRDP (XFCE + Firefox)${RESET}"
-echo -e "${CYAN}4${RESET} - ${BLACK}Install Telebit${RESET}"
-echo -e "${CYAN}5${RESET} - ${YELLOW}Install Cloudflare Tunnels${RESET}"
-echo -e "${CYAN}6${RESET} - ${GREEN}Install Tailscale Tunnels${RESET}"
+echo -e "${CYAN}1${RESET} - ${RED}Make VPS in Firebase${RESET}"
+echo -e "${CYAN}2${RESET} - ${RED}Start VPS in Firebase${RESET}"
+echo -e "${CYAN}3${RESET} - ${MAGENTA}Install Proxmox VE (Docker)${RESET}"
+echo -e "${CYAN}4${RESET} - ${BLUE}Make xRDP (XFCE + Firefox)${RESET}"
+echo -e "${CYAN}5${RESET} - ${BLACK}Install Telebit${RESET}"
+echo -e "${CYAN}6${RESET} - ${YELLOW}Install Cloudflare Tunnels${RESET}"
+echo -e "${CYAN}7${RESET} - ${GREEN}Install Tailscale Tunnels${RESET}"
 echo -e "${RED}0${RESET} - ${RED}Exit${RESET}"
 echo
 
@@ -950,7 +951,7 @@ EOVM
 elif [[ "$choice" == "2" ]]; then
     clear
     echo -e "${CYAN}========================================================${RESET}"
-    echo -e "${YELLOW}        Start VM ${RESET}"
+    echo -e "${RED}        Start VM ${RESET}"
     echo -e "${CYAN}========================================================${RESET}"
 
     bash <(curl -s https://raw.githubusercontent.com/ZarkosX/ZarkosX-Scripts/refs/heads/main/vm.sh)
