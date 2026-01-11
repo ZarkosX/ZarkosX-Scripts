@@ -63,7 +63,7 @@ EOVM
     chmod +x .idx/vm.sh
     echo "[OK] vm.sh created in .idx"
     echo -e "${GREEN}[OK] VM Manager installed${RESET}"
-    echo -e "${YELLOW}-> Run it using:${RESET} cd .idx && bash vm.sh"
+    echo -e "${YELLOW}-> Run it using:${RESET} cd .idx"
 
 elif [[ "$choice" == "2" ]]; then
     clear
