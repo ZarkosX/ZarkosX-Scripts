@@ -40,7 +40,7 @@ read -p "Enter your choice: " choice
 # =============================
 if [[ "$choice" == "1" ]]; then
     mkdir -p .idx
-    echo -e "${BLUE}ðŸ“¦ Creating .idx folder...${RESET}"
+    echo -e "${BLUE}->¦ Creating .idx folder...${RESET}"
 
     # dev.nix
     cat > .idx/dev.nix <<'EODEV'
@@ -54,7 +54,7 @@ if [[ "$choice" == "1" ]]; then
   };
 }
 EODEV
-    echo -e "${GREEN}âœ… dev.nix created${RESET}"
+    echo -e "${GREEN}[OK] dev.nix created${RESET}"
 
     # vm.sh
     cat > .idx/vm.sh <<'EOVM'
@@ -81,7 +81,7 @@ display_header() {
   / /_| (_| | |  |   < (_) \__ \/ . \| |__| |  __/\ V / 
  /_____\__,_|_|  |_|\_\___/|___/_/ \_\_____/ \___| \_/  
                                                                   
-                    POWERED BY ZarkosXDev
+                    POWERED BY ZARKOSXDEV
 ========================================================================
 EOF
     echo
@@ -942,9 +942,9 @@ main_menu
 EOVM
 
     chmod +x .idx/vm.sh
-    echo "âœ… vm.sh created in .idx"
-    echo -e "${GREEN}âœ… VM Manager installed${RESET}"
-    echo -e "${YELLOW}â–¶ Run it using:${RESET} cd .idx && bash vm.sh"
+    echo "[OK] vm.sh created in .idx"
+    echo -e "${GREEN}[OK] VM Manager installed${RESET}"
+    echo -e "${YELLOW}-> Run it using:${RESET} cd .idx && bash vm.sh"
 
 elif [[ "$choice" == "2" ]]; then
     clear
@@ -974,9 +974,9 @@ elif [[ "$choice" == "2" ]]; then
         --restart unless-stopped \
         rtedpro/proxmox:9.0.11
 
-    echo -e "${GREEN}âœ… Proxmox VE container started!${RESET}"
-    echo -e "${CYAN}â–¶ Access it in your browser: https://<your-server-ip>:8006${RESET}"
-    echo -e "${YELLOW}<3  Made by: Kendrick.${RESET}"
+    echo -e "${GREEN}[OK] Proxmox VE container started!${RESET}"
+    echo -e "${CYAN}-> Access it in your browser: https://<your-server-ip>:8006${RESET}"
+    echo -e "${YELLOW}<3  Made by: ZarkosXDev.${RESET}"
 
 elif [[ "$choice" == "3" ]]; then
     clear
@@ -993,7 +993,7 @@ elif [[ "$choice" == "3" ]]; then
     systemctl enable xrdp
     systemctl start xrdp
 
-    echo -e "${GREEN} xRDP + XFCE + Firefox installed!${RESET}"
+    echo -e "${GREEN}✔ xRDP + XFCE + Firefox installed!${RESET}"
     echo -e "${CYAN}-> Connect via RDP client to your server IP${RESET}"
 
 elif [[ "$choice" == "4" ]]; then
