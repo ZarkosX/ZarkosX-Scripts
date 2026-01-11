@@ -29,6 +29,7 @@ echo -e "${CYAN}2${RESET} - ${MAGENTA}Install Proxmox VE (Docker)${RESET}"
 echo -e "${CYAN}3${RESET} - ${BLUE}Make xRDP (XFCE + Firefox)${RESET}"
 echo -e "${CYAN}4${RESET} - ${BLACK}Install Telebit${RESET}"
 echo -e "${CYAN}5${RESET} - ${YELLOW}Install Cloudflare Tunnels${RESET}"
+echo -e "${CYAN}6${RESET} - ${GREEN}Install Tailscale Tunnels${RESET}"
 echo -e "${RED}0${RESET} - ${RED}Exit${RESET}"
 echo
 
@@ -1007,29 +1008,47 @@ elif [[ "$choice" == "4" ]]; then
     echo -e "${CYAN}-> Run it using: telebit help${RESET}"
 
 elif [[ "$choice" == "5" ]]; then
-    clear
-    echo -e "${CYAN}========================================================${RESET}"
-    echo -e "${YELLOW}        Installing Cloudflare Tunnel (cloudflared)${RESET}"
-    echo -e "${CYAN}========================================================${RESET}"
+        clear
+        echo -e "${CYAN}========================================================${RESET}"
+        echo -e "${YELLOW}        Installing Cloudflare Tunnel (cloudflared)${RESET}"
+        echo -e "${CYAN}========================================================${RESET}"
 
-    # Add Cloudflare GPG key
-    sudo mkdir -p --mode=0755 /usr/share/keyrings
-    curl -fsSL https://pkg.cloudflare.com/cloudflare-public-v2.gpg | sudo tee /usr/share/keyrings/cloudflare-public-v2.gpg >/dev/null
+        sudo mkdir -p --mode=0755 /usr/share/keyrings
+        curl -fsSL https://pkg.cloudflare.com/cloudflare-public-v2.gpg | sudo tee /usr/share/keyrings/cloudflare-public-v2.gpg >/dev/null
 
-    # Add Cloudflare repository
-    echo 'deb [signed-by=/usr/share/keyrings/cloudflare-public-v2.gpg] https://pkg.cloudflare.com/cloudflared any main' | sudo tee /etc/apt/sources.list.d/cloudflared.list >/dev/null
+        echo 'deb [signed-by=/usr/share/keyrings/cloudflare-public-v2.gpg] https://pkg.cloudflare.com/cloudflared any main' | sudo tee /etc/apt/sources.list.d/cloudflared.list >/dev/null
 
-    # Install cloudflared
-    sudo apt update && sudo apt install -y cloudflared
+        sudo apt update && sudo apt install -y cloudflared
 
-    echo -e "${GREEN}[OK] Cloudflare Tunnel installed successfully!${RESET}"
-    echo -e "${CYAN}[OK] Login using: cloudflared tunnel login${RESET}"
-    echo -e "${CYAN}[OK] Create tunnel: cloudflared tunnel create NAME${RESET}"
+        echo -e "${GREEN}[OK] Cloudflare Tunnel installed successfully!${RESET}"
+        echo -e "${CYAN}[OK] Login using: cloudflared tunnel login${RESET}"
+        echo -e "${CYAN}[OK] Create tunnel: cloudflared tunnel create NAME${RESET}"
 
-elif [[ "$choice" == "0" ]]; then
-    echo -e "${RED}❌Exiting...${RESET}"
-    exit 0
+elif [[ "$choice" == "6" ]]; then
+        clear
+        echo -e "${CYAN}========================================================${RESET}"
+        echo -e "${YELLOW}        Installing Tailscale${RESET}"
+        echo -e "${CYAN}========================================================${RESET}"
 
-else
-    echo -e "${RED}❌Invalid choice!${RESET}"
-fi
+        curl -fsSL https://tailscale.com/install.sh | bash
+        echo -e "${GREEN}[OK] Tailscale installed!${RESET}"
+
+        read -p "Do you want to start Tailscale now? (y/n): " start_choice
+        if [[ "$start_choice" =~ ^[Yy]$ ]]; then
+            sudo tailscale up
+            echo -e "${GREEN}[OK] Tailscale is now running!${RESET}"
+        else
+            echo -e "${YELLOW}Tailscale start skipped.${RESET}"
+        fi
+
+    elif [[ "$choice" == "0" ]]; then
+        echo -e "${RED}Exiting...${RESET}"
+        exit 0
+
+    else
+        echo -e "${RED}Invalid choice!${RESET}"
+        sleep 2
+    fi
+
+    read -p "Press Enter to return to the menu..."
+done
